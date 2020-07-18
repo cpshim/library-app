@@ -96,6 +96,10 @@ button:hover{
     color: #F1FAEE;
 }
 
+.submit{
+    background-color: #A8DADC;
+}
+
 #add{
     margin-top: 40px;
 }
@@ -149,7 +153,7 @@ button:hover{
 input{
     background: #F1FAEE;
     font-size: 26px;
-    width: 95%;
+    width: 97%;
     border: 0px;
 }
 
