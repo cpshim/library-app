@@ -14,8 +14,20 @@
 }
 
 .card:hover{
-    transform: scale(1.1);
-    box-shadow: 8px 8px;
+    animation-name: card-pop-up;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-pop-up{
+    0%{
+        box-shadow: 0px 0px;
+        transform: scale(1);
+    }
+    100%{
+        box-shadow: 8px 8px;
+        transform: scale(1.1);
+    }
 }
 
 h1{
@@ -29,7 +41,20 @@ button{
 }
 
 button:hover{
-    box-shadow: 5px 5px;
+    animation-name: button-popup;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-popup{
+    0%{
+        box-shadow: 0px 0px;
+        transform: scale(1);
+    }
+    100%{
+        box-shadow: 5px 5px;
+        transform: scale(1.1);
+    }
 }
 
 #add{
@@ -64,18 +89,27 @@ button:hover{
     margin: auto; 
     width: 60%;  
     font-size: 20px;
-    box-shadow: 10px 10px;
     border-radius: 5px;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+    box-shadow: 10px 10px;
+    animation-name: form-popup;
+    animation-duration: 0.5s;
+}
+
+@keyframes form-popup{
+    0%{
+        transform: scale(0);
+        box-shadow: 0px 0px;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 10px 10px;
+    }
 }
 
 input{
-    font-size: 20px;
-    width: 100%;
-    margin: 10px 0px 10px 0px;
+    font-size: 26px;
+    width: 95%;
+    border: 0px;
 }
 
 .icon-div{
@@ -88,6 +122,25 @@ input{
 }
 
 .icon-btn:hover{
-    transform: scale(1.25);
-    box-shadow: 0px 0px;
+    animation-name: icon-popup;
+    animation-duration: 500ms;
+}
+
+@keyframes icon-popup{
+    0%{
+        transform: scale(1);
+        box-shadow: 0px 0px;
+    }
+    100%{
+        transform: scale(1.25);
+        box-shadow: 0px 0px;
+    }
+}
+
+.rounded-input{
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    text-align: center;
+    height: 40px;
 }
