@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>Library</title>
+    </head>
+    <main>
+        <h1>My Handy Library</h1>
+        <body>
+            <div id="content"></div>
+
+            <div id="add-content">
+                <button id="add">NEW BOOK</button>
+            </div>
+
+            <div class="pop-up">
+                <div class="pop-up-content">
+                    <button id="close">X</button>
+                    <form class="user-input">
+                        <h2>Enter New Book Information</h2>
+                        <input id="title" type="text" placeholder="Title">
+                        <input id="author" type="text" placeholder="Author">
+                        <input id="numOfPages" type="number" placeholder="Number of Pages" min="1">
+                        <div class="submit-button">
+                            <button type="button" class="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </body>
+    </main>
+    <script src="script.js"></script>
+</html>
