@@ -63,7 +63,14 @@ function render(){
         const didRead = document.createElement("p");
         didRead.textContent = myLibrary[i].getRead();
 
+        const line1 = document.createElement("hr");
+        const line2 = document.createElement("hr");
+
+        card.appendChild(line1);
+
         card.appendChild(titleAuthor);
+
+        card.appendChild(line2);
 
         card.appendChild(pages);
 

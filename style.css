@@ -1,14 +1,51 @@
+body{
+    background-color: #E63946;
+}
+
+.border{
+    width: 40px;
+    height: 100%;
+}
+
+.title{
+    background-color: #457B9D;
+    border-radius: 10px;
+    border: 5px solid #1D3557;
+    box-shadow: 10px 10px #1D3557;
+    width: 45%;
+    height: 75px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    color: #1D3557;
+}
+
+.line{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
 #content{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 40px;
-    width: 1000px;
+    background-color: #E63946;
+    width: 40%;
+    height: 100%;
     margin: auto;
+    margin-top: 30px;
 }
 
 .card{
-    border: 1px solid black;
+    border: 5px solid #1D3557;
     border-radius: 5px;
+    background-color: #F1FAEE;
     font-size: 20px;
     padding: 20px 20px 20px 20px;
 }
@@ -21,22 +58,19 @@
 
 @keyframes card-pop-up{
     0%{
-        box-shadow: 0px 0px;
+        box-shadow: 0px 0px #1D3557;
         transform: scale(1);
     }
     100%{
-        box-shadow: 8px 8px;
+        box-shadow: 8px 8px  #1D3557;
         transform: scale(1.1);
     }
 }
 
-h1{
-    text-align: center;
-}
-
 button{
-    background: white;
-    border: 1px solid black;
+    background: #F1FAEE;
+    border: 5px solid #1D3557;
+    border-radius: 5px;
     font-size: 25px;
 }
 
@@ -48,13 +82,18 @@ button:hover{
 
 @keyframes button-popup{
     0%{
-        box-shadow: 0px 0px;
+        box-shadow: 0px 0px #1D3557;
         transform: scale(1);
     }
     100%{
-        box-shadow: 5px 5px;
+        box-shadow: 5px 5px #1D3557;
         transform: scale(1.1);
     }
+}
+
+#close{
+    background-color: #E63946;
+    color: #F1FAEE;
 }
 
 #add{
@@ -84,13 +123,14 @@ button:hover{
 
 .pop-up-content {
     position: relative; 
-    background-color: white;
+    background-color: #F1FAEE;
+    border: 5px solid #1D3557;
     padding: 20px; 
     margin: auto; 
     width: 60%;  
     font-size: 20px;
     border-radius: 5px;
-    box-shadow: 10px 10px;
+    box-shadow: 10px 10px #1D3557;
     animation-name: form-popup;
     animation-duration: 0.5s;
 }
@@ -107,6 +147,7 @@ button:hover{
 }
 
 input{
+    background: #F1FAEE;
     font-size: 26px;
     width: 95%;
     border: 0px;
@@ -119,6 +160,7 @@ input{
 
 .icon-btn{
     border: 0px;
+    background-color: #F1FAEE;
 }
 
 .icon-btn:hover{
@@ -129,17 +171,17 @@ input{
 @keyframes icon-popup{
     0%{
         transform: scale(1);
-        box-shadow: 0px 0px;
+        box-shadow: 0px 0px #F1FAEE;
     }
     100%{
         transform: scale(1.25);
-        box-shadow: 0px 0px;
+        box-shadow: 0px 0px #F1FAEE;
     }
 }
 
 .rounded-input{
     border-radius: 25px;
-    border: 1px solid black;
+    border: 2px solid #1D3557;
     margin-bottom: 8px;
     text-align: center;
     height: 40px;
